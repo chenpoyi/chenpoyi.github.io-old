@@ -1,0 +1,42 @@
+
+body {
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.profile{
+  margin-top: 100px;
+
+}
+#profile-pic {
+  width : 150px;
+  height: 150px;
+}
+.socials {
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+.links {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+.links button{
+  margin: 10px;
+}
+
+.name {
+  text-align: center;
+}
+
+.projects-container {
+  display:flex;
+  flex-direction: row;
+}
+
+.project-card {
+  margin: 20px
+}

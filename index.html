@@ -1,25 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/8a0da0037c.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Paul Chen</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a>Paul Chen</a>
-    </nav>
-    <h1>Hello, world!</h1>
+    <!-- header -->
+    <header>
+      <div class="profile">
+        <div>
+          <img id="profile-pic" src="/images/profile.png" />
+        </div>
+        <br />
+        <div>
+          <h2 class="name">Paul Chen</h2>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/chenpoyi/"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <!-- <i class="fab fa-twitter fa-2x"></i> -->
+          <i class="fab fa-linkedin fa-2x"></i>
+        </div>
+        <div class="links">
+          <button type="button" class="btn btn-primary btn-lg">About Me</button>
+          <button type="button" class="btn btn-primary btn-lg">Projects</button>
+          <button type="button" class="btn btn-primary btn-lg">Resume</button>
+        </div>
+      </div>
+    </header>
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <div class="projects-container">
+        
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
 </html>
