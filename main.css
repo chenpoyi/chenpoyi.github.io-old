@@ -55,17 +55,25 @@ header,
 h6 {
   line-height: 1.7;
 }
-.title-box{
+
+
+
+#box-1 {
+  background-color:hsla(215, 39%, 30%, .3);
+  width: 35%;
+  height: 90px;
   flex-direction: column;
 }
 .title{
   font-size: 72px;
   font-family: 'Merriweather', serif;
+
   color: hsla(349, 50%, 33%, 1);
 }
-.subtitle{
+#subtitle{
   font-size: 56px;
   font-family: 'Merriweather', serif;
+
   color: hsla(349, 75%, 33%, 1);
 }
 .rgba-gradient {
