@@ -66,7 +66,7 @@ h6 {
 .subtitle{
   font-size: 56px;
   font-family: 'Merriweather', serif;
-  color: hsla(349, 50%, 33%, 1);
+  color: hsla(349, 75%, 33%, 1);
 }
 .rgba-gradient {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
