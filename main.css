@@ -7,6 +7,8 @@ header,
   height: 100%;
   flex-direction: column;
   text-align: center;
+  /* justify-content: center; */
+  
 }
 
 @media (max-width: 740px) {
@@ -98,9 +100,24 @@ h6 {
     rgba(29, 210, 177, 0.7) 100%
   );
 }
+#about-me {
+  display:flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+}
+
+.profile-card {
+  max-width: 500px; 
+  background-color: hsla(215, 39%, 30%, 0.25);
+  padding: 25px;
+  justify-content: center;
+}
 .avatar {
   vertical-align: middle;
   width: 300px;
+  
+
 }
 
 #skills-container {
@@ -123,4 +140,8 @@ h6 {
   width: "16";
   height: "16";
   fill: hsla(349, 75%, 33%, 1);
+}
+
+.socials a{
+  padding: 20px;
 }
