@@ -34,7 +34,7 @@ const projects = [
   {
     name: "HeroQuest Companion App",
     description:
-      "An online companion app for the classic board game HeroQuest! Allows for character tracking and a space for playing the board game online. Have you ever lost your Hero Quest character sheets? Do you want to play HeroQuest online with your friends? Jump in and join the fun but beware of the monsters lurking in the dungons!!!!",
+      "An online companion app for the classic board game HeroQuest built as the Final Project at Lighthouse Labs in collaboration with Scott Morton! Allows for character tracking and a space for playing the board game online. Have you ever lost your Hero Quest character sheets? Do you want to play HeroQuest online with your friends? Jump in and join the fun but beware of the monsters lurking in the dungons!!!!",
     url: "https://github.com/chenpoyi/final-heroquest",
     image:
       "https://github.com/chenpoyi/final-heroquest/blob/master/documents/New_Character.gif?raw=true",
