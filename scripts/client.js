@@ -1,9 +1,44 @@
 const projects = [
-  { name: "Tweeter", description: "This is a Twitter clone." },
-  { name: "Tweeter", description: "This is a Twitter clone." },
-  { name: "Tweeter", description: "This is a Twitter clone." },
-  { name: "Tweeter", description: "This is a Twitter clone." },
-  { name: "Tweeter", description: "This is a Twitter clone." },
+  {
+    name: "Tweeter",
+    description:
+      "Tweeter is a simple, single-page Twitter clone. This was built during my time at Lighthouse Labs to improve my responsive web design, HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.",
+    url: "http://github.com/chenpoyi/tweeter",
+    image:
+      "https://raw.githubusercontent.com/chenpoyi/tweeter/master/doc/desktop-view.png",
+  },
+  {
+    name: "TinyApp",
+    description:
+      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).",
+    url: "https://github.com/chenpoyi/tinyapp",
+    image:
+      "https://github.com/chenpoyi/tinyapp/blob/master/docs/urls_index.png?raw=true",
+  },
+  {
+    name: "WikiMaps",
+    description:
+      "WikiMaps is a a midterm project built at Lighthouse Labs in collaboration with Ian Cameron and Will Zak. WikiMap is a single page application where users with accounts can create, edit, and delete maps with no, one, or multiple points that include titles, descriptions, and photos. The application is used to highlight knowledge of: - NodeJS - Express with RESTful routes - Bulma CSS framework - jQuery - SASS CSS preprocessor - PostgreSQL and pg for DBMC - git for version control - Responsive Design",
+    url: "https://github.com/willzak/Midterm-WikiMap",
+    image:
+      "https://camo.githubusercontent.com/ca26d2751b2c9c7db8369eec24cbfae40d3cbff95fc8a651265b74230f09ceed/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f306d4463335a69644a553070466976756f7a2f67697068792e676966",
+  },
+  {
+    name: "Scheduler",
+    description:
+      "This project is an single-page application that allows users to add, edit and cancel interviews given the time slots and available interviewers. This modern client application is created using the React view library. It communicates with an API server to retrieve and store data. The testing of this project involve unit, integration and end-to-end testing. The purpose of this project was to learn to build and test a React application and is not intended for commercial use.",
+    url: "https://github.com/chenpoyi/scheduler",
+    image:
+      "https://github.com/chenpoyi/scheduler/blob/master/docs/application.png?raw=true",
+  },
+  {
+    name: "HeroQuest Companion App",
+    description:
+      "An online companion app for the classic board game HeroQuest! Allows for character tracking and a space for playing the board game online. Have you ever lost your Hero Quest character sheets? Do you want to play HeroQuest online with your friends? Jump in and join the fun but beware of the monsters lurking in the dungons!!!!",
+    url: "https://github.com/chenpoyi/final-heroquest",
+    image:
+      "https://github.com/chenpoyi/final-heroquest/blob/master/documents/New_Character.gif?raw=true",
+  },
 ];
 
 const skills = [
@@ -14,6 +49,7 @@ const skills = [
 ];
 $(document).ready(function () {
   renderSkills(skills);
+  renderProjects(projects);
 });
 
 const renderSkills = function (skills) {
@@ -51,21 +87,22 @@ const createSkillElement = function (skill) {
   return template;
 };
 
-// const renderProjects = function (projects) {
-//   $(".projects-container").empty();
+const renderProjects = function (projects) {
+  $("#projects-container").empty();
 
-//   for (let project of projects) {
-//     console.log("HELLO")
-//     const $project = createProjectElement(project);
-//     console.log($project)
-//     $(".projects-container").prepend($project); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-//   }
-// };
+  for (let project of projects) {
+    console.log("HELLO");
+    const $project = createProjectElement(project);
+    console.log($project);
+    $("#projects-container").prepend($project); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  }
+};
 
 const createProjectElement = function (projectObj) {
   const name = projectObj.name;
   const description = projectObj.description;
   const image = projectObj.image;
+  const url = projectObj.url;
   const template = `
         <div class="card project-card" style="width: 18rem">
           <img src="${image}" class="card-img-top" alt="..." />
@@ -74,7 +111,7 @@ const createProjectElement = function (projectObj) {
             <p class="card-text">
               ${description}
             </p>
-            <a href="#" class="btn btn-primary">See Repo</a>
+            <a href= "${url}" class="btn btn-primary" target="_blank">See Repo</a>
           </div>
         </div>
   `;
